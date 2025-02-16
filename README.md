@@ -1,5 +1,4 @@
-# DeepSeek Share Chrome Extension
-
+# ShareDS
 这是一个Chrome浏览器扩展，用于分享DeepSeek对话内容。用户可以轻松地将他们的DeepSeek对话分享给其他人。
 
 ## 功能特点
@@ -21,7 +20,7 @@
 ## 使用方法
 
 1. 访问DeepSeek网站并进行对话
-2. 在对话界面右下角找到"分享"按钮
+2. 在对话界面对话栏找到"分享"按钮
 3. 点击分享按钮，等待生成分享链接
 4. 分享链接将在新标签页中打开，可以复制链接分享给他人
 
@@ -45,24 +44,12 @@ deepseek-share/
 - Chrome浏览器
 - 后端API服务（需要单独部署）
 
-### 配置说明
-
-1. 修改`content.js`中的`API_URL`为你的实际API地址：
-```javascript
-const API_URL = "http://your-api-domain/api/deepseek-share";
-```
-
-2. 根据DeepSeek网站的DOM结构调整选择器：
-```javascript
-const buttonsWrapper = document.querySelector(".chat-input-actions");
-const conversationContainer = document.querySelector(".chat-message-list");
-```
 
 ### 本地开发
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/your-username/deepseek-share.git
+git clone https://github.com/Littlesheepxy/shareDS.git
 ```
 
 2. 在Chrome扩展管理页面加载解压的扩展
